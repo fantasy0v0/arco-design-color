@@ -1,5 +1,5 @@
 import Color from 'color';
-import { getColorString } from './utils';
+import { getColorString } from './utils.js';
 
 // 色板
 

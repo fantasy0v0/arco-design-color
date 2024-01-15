@@ -1,6 +1,6 @@
 import Color from 'color';
-import colorPalette from './palette';
-import { getColorString } from './utils';
+import { colorPalette } from './palette.js';
+import { getColorString } from './utils.js';
 
 // 暗色色板
 

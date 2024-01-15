@@ -2,9 +2,10 @@
   "name": "@arco-design/color",
   "version": "0.4.0",
   "description": "ArcoDesign color utils",
+  "type": "module",
   "main": "./src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jasmine --config=jasmine.json"
   },
   "keywords": [
     "ArcoDesign",
@@ -17,7 +18,7 @@
     "color": "^3.1.3"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jasmine": "^5.1.0"
   },
   "files": [
     "src"

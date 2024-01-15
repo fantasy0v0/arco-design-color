@@ -1,5 +1,5 @@
-import colorPalette from './palette';
-import colorPaletteDark from './palette-dark';
+import { colorPalette } from './palette.js';
+import { colorPaletteDark } from './palette-dark.js';
 
 /**
  * @param {string} color

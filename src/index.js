@@ -1,5 +1,5 @@
-import _generate from './generate';
-import { getRgbStr as _getRgbStr } from './utils';
+import { generate as _generate } from './generate.js';
+import { getRgbStr as _getRgbStr } from './utils.js';
 
 export const generate = _generate;
 export const getRgbStr = _getRgbStr;
