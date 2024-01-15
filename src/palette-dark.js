@@ -1,11 +1,11 @@
-const Color = require('color');
-const colorPalette = require('./palette');
-const { getColorString } = require('./utils');
+import Color from 'color';
+import colorPalette from './palette';
+import { getColorString } from './utils';
 
 // 暗色色板
 
 // 动态梯度算法
-function colorPaletteDark(originColor, i, format) {
+export function colorPaletteDark(originColor, i, format) {
   const lightColor = Color(colorPalette(originColor, 10 - i + 1));
   const originBaseColor = Color(originColor);
 
@@ -48,5 +48,3 @@ function colorPaletteDark(originColor, i, format) {
 
   return getColorString(retColor, format);
 }
-
-module.exports = colorPaletteDark;

@@ -1,11 +1,11 @@
-const Color = require('color');
+import Color from "color";
 
-exports.getRgbStr = function(color) {
+export function getRgbStr(color) {
   return Color(color)
-    .rgb()
-    .round()
-    .color
-    .join(',');
+  .rgb()
+  .round()
+  .color
+  .join(',');
 }
 
 const formats = ['hex', 'rgb', 'hsl'];
@@ -17,7 +17,7 @@ function getFormat(format) {
   return format;
 }
 
-exports.getColorString = function(color, format) {
+export function getColorString(color, format) {
   const innerFormat = getFormat(format);
 
   if (innerFormat === 'hex') {

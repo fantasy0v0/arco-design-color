@@ -1,10 +1,10 @@
-const Color = require('color');
-const { getColorString } = require('./utils');
+import Color from 'color';
+import { getColorString } from './utils';
 
 // 色板
 
 // 动态梯度算法
-function colorPalette(originColor, i, format) {
+export function colorPalette(originColor, i, format) {
   const color = Color(originColor);
   const h = color.hue();
   const s = color.saturationv();
@@ -60,5 +60,3 @@ function colorPalette(originColor, i, format) {
   
   return getColorString(retColor, format);
 }
-
-module.exports = colorPalette;

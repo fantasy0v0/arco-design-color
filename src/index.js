@@ -1,8 +1,8 @@
-const generate = require('./generate');
-const { getRgbStr } = require('./utils');
+import _generate from './generate';
+import { getRgbStr as _getRgbStr } from './utils';
 
-exports.generate = generate;
-exports.getRgbStr = getRgbStr;
+export const generate = _generate;
+export const getRgbStr = _getRgbStr;
 
 const colorList = {
   red: '#F53F3F',
@@ -20,7 +20,7 @@ const colorList = {
   magenta: '#F5319D',
 };
 
-function getPresetColors() {
+export function getPresetColors() {
   const presetColors = {};
   Object.keys(colorList).forEach((key) => {
     presetColors[key] = {};
@@ -58,5 +58,3 @@ function getPresetColors() {
 
   return presetColors;
 }
-
-exports.getPresetColors = getPresetColors;
